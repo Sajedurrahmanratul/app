@@ -73,3 +73,13 @@ $('.slider').slick({
     // instead of a settings object
   ]
 });
+
+// init Isotope
+var $grid = $('.prices').isotope({
+  // options
+});
+// filter items on button click
+$('.filter-button-group').on( 'click', 'button', function() {
+  var filterValue = $(this).attr('data-filter');
+  $grid.isotope({ filter: filterValue });
+});

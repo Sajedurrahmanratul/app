@@ -15,7 +15,7 @@ body {
   padding: 0;
   box-sizing: border-box;
   overflow-x: hidden;
-  height: 5000px;
+  height: 10000px;
   font-family: "Roboto", sans-serif;
 }
 
@@ -56,7 +56,7 @@ a {
   text-decoration: none;
 
   &:hover {
-    color: white;
+    color: $primary-color;
     text-decoration: none;
   }
 }
@@ -189,6 +189,11 @@ FAQ Css
 
 .faq {
   padding: 70px 0;
+  background: url(/img/sec5-bg.png);
+  background-repeat: no-repeat;
+  background-position: center;
+  height: fit-content;
+  background-size: cover;
 
   span {
     color: $primary-color;
@@ -232,5 +237,150 @@ Subscribe Css
     position: absolute;
     top: 0;
     right: -50px;
+  }
+}
+
+/*========================================================================
+Pricing Plans Css
+=======================================================================*/
+
+.pricing {
+  padding: 120px 0;
+
+  span {
+    color: $primary-color;
+  }
+
+  .button-group {
+    button {
+      background: none;
+      outline: none;
+      border: 2px solid rgb(172, 172, 172);
+      margin-left: 20px;
+      padding: 5px 15px;
+      cursor: pointer;
+      transition: 0.3s ease all;
+
+      &:hover {
+        background: $primary-color;
+        color: $pure-color;
+        border: none;
+      }
+
+      &:focus {
+        background: $primary-color;
+        color: $pure-color;
+        border: none;
+      }
+    }
+  }
+  .card {
+    .card-body {
+      padding: 35px 25px;
+      transition: 0.4s ease-in-out all;
+      .head {
+        display: flex;
+        justify-content: center;
+        h3 {
+          color: $primary-color;
+          background: #e0e9f8;
+          padding: 5px 15px;
+          border-radius: 50px;
+        }
+      }
+
+      h2 {
+        color: $primary-color;
+      }
+      .button {
+        button {
+          background: none;
+          border: 2px solid $primary-color;
+          padding: 5px 20px;
+          border-radius: 50px;
+          color: $primary-color;
+        }
+      }
+
+      &:hover {
+        box-shadow: 0px 8px 17px 2px rgba(0, 0, 0, 0.14),
+          0px 3px 14px 2px rgba(0, 0, 0, 0.12),
+          0px 5px 5px -3px rgba(0, 0, 0, 0.2);
+        background: $primary-color;
+
+        h3 {
+          color: $primary-color;
+          background: white;
+          padding: 5px 15px;
+          border-radius: 50px;
+        }
+
+        h2 {
+          color: $pure-color;
+        }
+
+        p {
+          color: $pure-color;
+        }
+
+        hr {
+          background: $pure-color;
+        }
+
+        .button {
+          button {
+            background: none;
+            border: 2px solid $pure-color;
+            padding: 5px 20px;
+            border-radius: 50px;
+            color: $pure-color;
+
+            &:hover {
+              a {
+                color: white;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+/*========================================================================
+Lettest Post Css
+=======================================================================*/
+
+.lettest_post {
+  span {
+    color: $primary-color;
+  }
+  .post {
+    padding: 20px 35px;
+
+    box-shadow: 0px 2px 5px 0px rgba(0, 0, 0, 0.14),
+      0px 1px 10px 0px rgba(0, 0, 0, 0.12), 0px 2px 4px -1px rgba(0, 0, 0, 0.2);
+    cursor: pointer;
+    &:hover {
+      h3 {
+        color: $primary-color;
+      }
+    }
+  }
+
+  button {
+    background: $primary-color;
+    border: none;
+    outline: none;
+    padding: 10px 25px;
+    border-radius: 50px;
+  }
+
+  a {
+    color: white;
+
+    &:hover {
+      color: white;
+    }
   }
 }

@@ -11,7 +11,7 @@ body {
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
   overflow-x: hidden;
-  height: 5000px;
+  height: 10000px;
   font-family: "Roboto", sans-serif;
 }
 
@@ -52,7 +52,7 @@ a {
 }
 
 a:hover {
-  color: white;
+  color: #3c75ce;
   text-decoration: none;
 }
 
@@ -460,6 +460,13 @@ FAQ Css
 =======================================================================*/
 .faq {
   padding: 70px 0;
+  background: url(/img/sec5-bg.png);
+  background-repeat: no-repeat;
+  background-position: center;
+  height: -webkit-fit-content;
+  height: -moz-fit-content;
+  height: fit-content;
+  background-size: cover;
 }
 
 .faq span {
@@ -506,5 +513,144 @@ Subscribe Css
   position: absolute;
   top: 0;
   right: -50px;
+}
+
+/*========================================================================
+Pricing Plans Css
+=======================================================================*/
+.pricing {
+  padding: 120px 0;
+}
+
+.pricing span {
+  color: #3c75ce;
+}
+
+.pricing .button-group button {
+  background: none;
+  outline: none;
+  border: 2px solid #acacac;
+  margin-left: 20px;
+  padding: 5px 15px;
+  cursor: pointer;
+  -webkit-transition: 0.3s ease all;
+  transition: 0.3s ease all;
+}
+
+.pricing .button-group button:hover {
+  background: #3c75ce;
+  color: #fffcfc;
+  border: none;
+}
+
+.pricing .button-group button:focus {
+  background: #3c75ce;
+  color: #fffcfc;
+  border: none;
+}
+
+.pricing .card .card-body {
+  padding: 35px 25px;
+  -webkit-transition: 0.4s ease-in-out all;
+  transition: 0.4s ease-in-out all;
+}
+
+.pricing .card .card-body .head {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.pricing .card .card-body .head h3 {
+  color: #3c75ce;
+  background: #e0e9f8;
+  padding: 5px 15px;
+  border-radius: 50px;
+}
+
+.pricing .card .card-body h2 {
+  color: #3c75ce;
+}
+
+.pricing .card .card-body .button button {
+  background: none;
+  border: 2px solid #3c75ce;
+  padding: 5px 20px;
+  border-radius: 50px;
+  color: #3c75ce;
+}
+
+.pricing .card .card-body:hover {
+  -webkit-box-shadow: 0px 8px 17px 2px rgba(0, 0, 0, 0.14), 0px 3px 14px 2px rgba(0, 0, 0, 0.12), 0px 5px 5px -3px rgba(0, 0, 0, 0.2);
+          box-shadow: 0px 8px 17px 2px rgba(0, 0, 0, 0.14), 0px 3px 14px 2px rgba(0, 0, 0, 0.12), 0px 5px 5px -3px rgba(0, 0, 0, 0.2);
+  background: #3c75ce;
+}
+
+.pricing .card .card-body:hover h3 {
+  color: #3c75ce;
+  background: white;
+  padding: 5px 15px;
+  border-radius: 50px;
+}
+
+.pricing .card .card-body:hover h2 {
+  color: #fffcfc;
+}
+
+.pricing .card .card-body:hover p {
+  color: #fffcfc;
+}
+
+.pricing .card .card-body:hover hr {
+  background: #fffcfc;
+}
+
+.pricing .card .card-body:hover .button button {
+  background: none;
+  border: 2px solid #fffcfc;
+  padding: 5px 20px;
+  border-radius: 50px;
+  color: #fffcfc;
+}
+
+.pricing .card .card-body:hover .button button:hover a {
+  color: white;
+}
+
+/*========================================================================
+Lettest Post Css
+=======================================================================*/
+.lettest_post span {
+  color: #3c75ce;
+}
+
+.lettest_post .post {
+  padding: 20px 35px;
+  -webkit-box-shadow: 0px 2px 5px 0px rgba(0, 0, 0, 0.14), 0px 1px 10px 0px rgba(0, 0, 0, 0.12), 0px 2px 4px -1px rgba(0, 0, 0, 0.2);
+          box-shadow: 0px 2px 5px 0px rgba(0, 0, 0, 0.14), 0px 1px 10px 0px rgba(0, 0, 0, 0.12), 0px 2px 4px -1px rgba(0, 0, 0, 0.2);
+  cursor: pointer;
+}
+
+.lettest_post .post:hover h3 {
+  color: #3c75ce;
+}
+
+.lettest_post button {
+  background: #3c75ce;
+  border: none;
+  outline: none;
+  padding: 10px 25px;
+  border-radius: 50px;
+}
+
+.lettest_post a {
+  color: white;
+}
+
+.lettest_post a:hover {
+  color: white;
 }
 /*# sourceMappingURL=style.css.map */
