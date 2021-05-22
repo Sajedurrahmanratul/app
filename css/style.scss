@@ -1,0 +1,184 @@
+/*========================================================================
+Variables Css
+=======================================================================*/
+
+$primary-color: #3c75ce;
+$pure-color: #fffcfc;
+$dark-color: #49455d;
+
+/*========================================================================
+Common Css
+=======================================================================*/
+
+body {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  overflow-x: hidden;
+  height: 5000px;
+  font-family: "Roboto", sans-serif;
+}
+
+/*========================================================================
+Fonts Css
+=======================================================================*/
+
+h1 {
+  font-family: "Roboto", sans-serif;
+  font-size: 66px;
+  font-weight: 500;
+}
+
+h2 {
+  font-family: "Roboto", sans-serif;
+  font-size: 48px;
+  font-weight: 500;
+}
+
+h3 {
+  font-family: "Roboto", sans-serif;
+  font-size: 24px;
+  font-weight: 600;
+}
+
+p {
+  font-family: "Roboto", sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 30px;
+}
+
+a {
+  font-family: "Roboto", sans-serif;
+  font-size: 19px;
+  font-weight: 500;
+  color: $pure-color;
+  text-decoration: none;
+
+  &:hover {
+    color: white;
+    text-decoration: none;
+  }
+}
+
+/*========================================================================
+Header and Nav Css
+=======================================================================*/
+
+header {
+  background: url(/img/header-bg.png);
+  background-repeat: no-repeat;
+  background-position: center;
+  height: fit-content;
+  background-size: cover;
+
+  nav {
+    .bton {
+      background: transparent;
+      outline: none;
+      border: none;
+      transition: 0.3s ease all;
+      &:hover {
+        border: 2px solid $pure-color;
+        padding: 5px 25px;
+      }
+    }
+  }
+  .header {
+    padding: 55px 0;
+  }
+}
+
+/*========================================================================
+App Process Css
+=======================================================================*/
+.process {
+  padding: 70px 35px;
+  .contain {
+    position: relative;
+    width: 100%;
+    height: fit-content;
+    padding: 35px 20px;
+    border: 1px solid rgb(230, 230, 230);
+    transition: 0.3s ease all;
+
+    &:hover {
+      box-shadow: 0px 8px 17px 2px rgba(0, 0, 0, 0.14),
+        0px 3px 14px 2px rgba(0, 0, 0, 0.12),
+        0px 5px 5px -3px rgba(0, 0, 0, 0.2);
+      border: none;
+    }
+    .number {
+      position: absolute;
+      top: 10px;
+      left: 50px;
+      z-index: -1;
+    }
+
+    i {
+      color: $primary-color;
+      font-size: 48px;
+      margin-bottom: 20px;
+    }
+
+    span {
+      color: $primary-color;
+    }
+
+    h3 {
+      margin-bottom: 15px;
+    }
+  }
+}
+
+/*========================================================================
+How it works video Css
+=======================================================================*/
+
+.how_it_work {
+  padding: 70px 35px;
+  background: url(/img/section2-bg.png);
+  background-repeat: no-repeat;
+  background-position: center;
+  height: fit-content;
+  background-size: cover;
+  span {
+    color: $primary-color;
+  }
+}
+
+/*========================================================================
+Testimonial Css
+=======================================================================*/
+
+.testimonial {
+  padding: 50px 0;
+  span {
+    color: $primary-color;
+  }
+  .review {
+    padding: 70px 0;
+    .mark {
+      color: $primary-color;
+      background: none;
+    }
+
+    h3 {
+      color: $primary-color;
+    }
+  }
+}
+
+@import "slick";
+@import "slick-theme";
+
+/*========================================================================
+Interface Css
+=======================================================================*/
+
+.interface {
+  padding: 50px 0;
+  span {
+    color: $primary-color;
+  }
+}
