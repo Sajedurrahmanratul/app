@@ -454,4 +454,19 @@ Interface Css
 .interface span {
   color: #3c75ce;
 }
+
+/*========================================================================
+FAQ Css
+=======================================================================*/
+.faq {
+  padding: 70px 0;
+}
+
+.faq span {
+  color: #3c75ce;
+}
+
+.faq .card h5 {
+  color: #49455d;
+}
 /*# sourceMappingURL=style.css.map */
