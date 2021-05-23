@@ -515,6 +515,14 @@ Subscribe Css
   right: -50px;
 }
 
+.subscribe a {
+  color: white;
+}
+
+.subscribe a:hover {
+  color: white;
+}
+
 /*========================================================================
 Pricing Plans Css
 =======================================================================*/
@@ -623,6 +631,17 @@ Pricing Plans Css
 /*========================================================================
 Lettest Post Css
 =======================================================================*/
+.lettest_post {
+  background: url(/img/wave.jpg);
+  width: 100%;
+  height: -webkit-fit-content;
+  height: -moz-fit-content;
+  height: fit-content;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+
 .lettest_post span {
   color: #3c75ce;
 }
@@ -651,6 +670,76 @@ Lettest Post Css
 }
 
 .lettest_post a:hover {
+  color: white;
+}
+
+/*========================================================================
+Contact Us Css
+=======================================================================*/
+.contact-us {
+  padding: 120px 0;
+}
+
+.contact-us .info {
+  color: #3c75ce;
+}
+
+.contact-us span {
+  color: #3c75ce;
+}
+
+.contact-us .email .form-control {
+  border-radius: 50px;
+  padding: 7px 15px;
+}
+
+.contact-us .dropdown button {
+  background: none;
+  padding: 9px 20px;
+  outline: none;
+  border: none;
+  border-radius: 50px;
+  color: #49455d;
+  border: 2px solid #3c75ce;
+  cursor: pointer;
+}
+
+.contact-us .submit button {
+  background: #3c75ce;
+  padding: 5px 20px;
+  outline: none;
+  border: none;
+  border-radius: 50px;
+}
+
+.contact-us .submit a {
+  color: white;
+}
+
+.contact-us .submit a:hover {
+  color: white;
+}
+
+/*========================================================================
+Footer Css
+=======================================================================*/
+footer {
+  padding: 50px 0 0 0;
+  background: #3c75ce;
+  width: 100%;
+  height: -webkit-fit-content;
+  height: -moz-fit-content;
+  height: fit-content;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+
+footer a {
+  color: white;
+}
+
+footer a:hover {
   color: white;
 }
 /*# sourceMappingURL=style.css.map */
